@@ -1,0 +1,175 @@
+.v_main {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    height: auto;
+    box-shadow: 3px 3px 10px rgb(99, 100, 99);
+    border-radius: 30px;
+    position: relative;
+    display: block;
+    border-style: solid;
+    border-color: #b271a6;
+}
+
+.v_main2 {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    height: auto;
+    box-shadow: 3px 3px 10px rgb(99, 100, 99);
+    border-radius: 50px;
+    position: relative;
+    border-style: solid;
+    display: block;
+    border-color: #0cc3a1;
+}
+
+.v_main3 {
+    display: flex;
+    width: 90%;
+    margin: 1rem auto;
+    height: auto;
+    border-radius: 50px;
+    position: relative;
+    display: block;
+
+}
+
+.image img {
+    border-radius: 50px;
+    width: 180px;
+    height: 120px;
+    top: 0px;
+    right: 0px;
+    z-index: 999;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.centered-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98vw;
+}
+
+.container-top {
+    padding: 1rem ;
+}
+
+.container .container-top {
+    padding: 1rem ;
+}
+
+.date-time {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-search {
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+select {
+    width: 150px;
+    /* กำหนดความกว้าง */
+    height: 50px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+}
+
+#colorBlockAI {
+    text-align: center; /* ทำให้ข้อความภายใน div อยู่ตรงกลาง */
+    margin: auto; /* ทำให้ div อยู่ตรงกลางของหน้าจอ */
+  }
+
+.custom-modal-width {
+    max-width: 1800px;
+    /* ปรับตามความต้องการ */
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ซ่อนกล่องข้อความเริ่มต้น */
+.hidden {
+    display: none;
+}
+
+/* แถบเตือนด้านขวา */
+#successMessage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #00b894; /* สีเขียวอื่นๆ */
+    color: #fff; /* สีตัวอักษรขาว */
+    padding: 0 20px; /* เพิ่มระยะห่างด้านซ้ายและขวา */
+    border-radius: 0 0 0 10px; /* ความโค้งมุมด้านล่างซ้าย */
+    text-align: center;
+    width: 30%; /* ความยาวครึ่งหน้าจอ */
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+    z-index: 1000;
+    display: none; /* ใช้ Flexbox */
+    align-items: center; /* จัดแนวข้อความแนวตั้งกึ่งกลาง */
+    justify-content: center; /* จัดแนวข้อความแนวนอนกึ่งกลาง */
+}
+
+/* แถบเตือนด้านขวา */
+#errorMessage {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #de0303; /* สีเขียวอื่นๆ */
+    color: #fff; /* สีตัวอักษรขาว */
+    padding: 0 20px; /* เพิ่มระยะห่างด้านซ้ายและขวา */
+    border-radius: 0 0 0 10px; /* ความโค้งมุมด้านล่างซ้าย */
+    text-align: center;
+    width: 30%; /* ความยาวครึ่งหน้าจอ */
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
+    z-index: 1000;
+    display: none; /* ใช้ Flexbox */
+    align-items: center; /* จัดแนวข้อความแนวตั้งกึ่งกลาง */
+    justify-content: center; /* จัดแนวข้อความแนวนอนกึ่งกลาง */
+}
+
+/* เพิ่มการเคลื่อนไหวเบาๆ ให้แถบเตือนดูดึงความสนใจ */
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ใช้การเคลื่อนไหว slide-in โดยใช้ชื่อ keyframes ข้างบน */
+#successMessage {
+    animation: slide-in 0.5s ease-in-out;
+}
+
+#errorMessage {
+    animation: slide-in 0.5s ease-in-out;
+}
+
+.divider {
+    border-right: 1px dotted #000; /* เส้นแบ่งเป็นเส้นประ */
+    margin-right: 15px; /* ระยะห่างขวาของเส้นแบ่ง */
+    flex-direction: column;
+}
+
+.logout a{
+    text-decoration: none; 
+    color: inherit;
+}
+
+.yellow-option {
+    color: yellow;
+    background-color: #e3dddd;
+}

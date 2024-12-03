@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 110%;
+    background: url('../img/bg.jpg') center center fixed;
+    background-size: cover;
+}
+
+/*.header{
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #e2a54a;
+    text-align: center;
+    border: 1px solid #fbeb03;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+form, .content {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #fbeb03;
+    background: rgb(231, 189, 73);
+    border-radius: 0px 0px 10px 10px;
+}*/
+
+.header{
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background-color: rgb(16, 80, 132, 0.7);
+    text-align: center;
+    border: 1px solid #f5f4f4;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+}
+
+form, .content {
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #f1f2f1;
+    background-color: rgb(16, 80, 132, 0.7);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-group label{
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input{
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 3px solid rgb(11, 222, 95);
+}
+
+.input-group2 p{
+    margin: 10px 0px 10px 0px;
+    color: rgb(255, 255, 255);
+}
+
+/*.btn {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background: #248961;
+    border: none;
+    border-radius: 10px;
+}*/
+
+.btn1 {
+    padding: 10px;
+    font-size: 10px;
+    color: rgb(205, 97, 97);
+    background: #222121;
+    border: none;
+    border-radius: 5px;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.success{
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+}

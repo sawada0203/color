@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3f2fd;
+}
+
+.header>.col {
+    flex: 1;
+}
+
+/* สไตล์สำหรับเมนูแฮมเบอร์เกอร์ */
+.hamburger-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #db6b20;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title img {
+    height: 60px;
+}
+
+.logo-title h3 {
+    margin: 0 0 0 10px;
+    padding-top: 15px;
+}
+
+.user-info {
+    text-align: right;
+    align-items: right;
+}
+
+.user-info .row {
+    align-items: right;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    /* มุมโค้ง */
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* ทำให้ภาพเป็นวงกลม */
+}
+
+.user-details {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.user-details a {
+    font-weight: bold;
+}
+
+.logout button {
+    font-size: 0.8rem;
+    /* ลดขนาดตัวอักษร */
+}
+
+
+/* สไตล์เมื่อเปลี่ยนเป็นรูปกากบาท */
+.cross .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.cross .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.cross .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ปรับแต่งสำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 1250px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+}
